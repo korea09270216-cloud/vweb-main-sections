@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>메인 신규 섹션 기획서</title>
+  <meta name="description" content="브이웹 메인페이지 신규 섹션 5종 기획서 — 레퍼런스 영상 분석, 톤앤매너, 섹션별 카피·구성·모션, 검증 결과">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 80 64%27%3E%3Cpath d=%27M0 0H19L43 44L31 49Z%27/%3E%3Cpath d=%27M72 5L44 55%27 stroke=%27%233235CD%27 stroke-width=%2715%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/plan.css?v=1">
+</head>
+<body>
+
+<header class="ph">
+  <a class="ph_logo" href="index.html" aria-label="시안 보기">
+    <svg viewBox="0 0 80 64" aria-hidden="true"><path d="M0 0H19L43 44L31 49Z" fill="#000"/><path d="M72 5L44 55" stroke="#3235CD" stroke-width="15" stroke-linecap="round" fill="none"/></svg>
+    <b>WEB</b>
+  </a>
+  <span class="ph_label">기획서</span>
+  <nav class="ph_nav">
+    <a href="#overview">한눈에</a><a href="#ref">레퍼런스</a><a href="#tone">톤앤매너</a><a href="#s1">섹션 상세</a><a href="#motion">모션 원칙</a><a href="#check">검증</a>
+  </nav>
+  <a class="ph_btn" href="index.html">시안 보기 →</a>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">MAIN SECTION PLAN · 2026.10.13</p>
+    <h1>브이웹 메인페이지<br><em>신규 섹션 5종</em> 기획서</h1>
+    <p class="lead">브이웹.com 메인에 추가할 다섯 섹션의 목적 · 카피 · 화면 구성 · 모션을 정리했습니다.<br>
+      모션 문법은 수정모드 홍보 영상(30초)을, 디자인 톤은 현재 브이웹.com 메인을 기준으로 맞췄습니다.</p>
+    <div class="meta">
+      <span><b>대상</b>브이웹.com 메인페이지</span>
+      <span><b>구성</b>5섹션 · PC/모바일 분기 모션</span>
+      <span><b>모션</b>GSAP 3.13 (ScrollTrigger · ScrollToPlugin)</span>
+      <span><b>시안</b><a href="index.html">index.html</a></span>
+    </div>
+  </section>
+
+  <!-- 0. 한눈에 -->
+  <section class="blk" id="overview">
+    <p class="blk_no">00</p>
+    <h2>한눈에 보기</h2>
+    <div class="tbl_wrap">
+      <table class="tbl">
+        <thead><tr><th>#</th><th>섹션</th><th>핵심 메시지</th><th>대표 모션</th><th>배경</th></tr></thead>
+        <tbody>
+          <tr><td class="n">01</td><td><b>V EDIT.</b><br>직접 고치는 홈페이지</td><td>문구 하나 바꾸는데 며칠씩? → 이제, 직접 고치세요.<br><span class="sub">수정모드 + 관리자 팝업 디자인</span></td><td>PC 단계 전환 핀(5단계 커서 시연)<br>모바일 자동 재생 + 탭</td><td><i class="sw" style="--c:#E9E9FF"></i>라벤더</td></tr>
+          <tr><td class="n">02</td><td><b>V SEARCH.</b><br>AI가 읽는 홈페이지</td><td>사람에게는 화면을, AI에게는 정확한 데이터를<br><span class="sub">SEO · AEO · GEO / JSON-LD · 사이트맵</span></td><td>화면 ↔ JSON-LD 1:1 매칭 하이라이트<br>AI 답변 스트리밍</td><td><i class="sw" style="--c:#fff"></i>화이트</td></tr>
+          <tr><td class="n">03</td><td><b>V FAST &amp; SAFE.</b><br>빠르고 단단하게</td><td>빠르게 열리고, 아무나 들어올 수 없게<br><span class="sub">속도 · 성능 · 보안 · 봇 차단</span></td><td>레이더(봇은 링에서 차단)<br>보안 로그 · 미니 시각화 4종</td><td><i class="sw" style="--c:#000"></i>블랙</td></tr>
+          <tr><td class="n">04</td><td><b>V INSIGHT.</b><br>숫자로 보는 방문자</td><td>누가 오고, 어디서 머물고, 왜 문의했는지<br><span class="sub">접속자 집계 · 홈페이지 방문분석</span></td><td>관리자 대시보드 카운트업<br>막대 · 퍼널 · 도넛</td><td><i class="sw" style="--c:#F3F3FF"></i>연라벤더</td></tr>
+          <tr><td class="n">05</td><td><b>V ALL IN ONE.</b><br>24시간 상담 중</td><td>상담이 끝난 밤에도, 홈페이지는 상담 중<br><span class="sub">AI 상담 · 문의 자동 배정 · 아웃트로</span></td><td>채팅 → 실시간 접수 → 자동 배정<br>마퀴 아웃트로</td><td><i class="sw" style="--c:#3235CD"></i>화이트 → 인디고</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">4섹션(방문분석)은 "내용이 부족하면 위 섹션에 합치기" 조건이었으나, 관리자 <b>홈페이지 분석</b> 기능(구역별 도달률 · 문의 단계 · 유입 매체 · 기기)만으로 한 섹션이 충분히 채워져 단독 섹션으로 구성했습니다.</p>
+  </section>
+
+  <!-- 1. 레퍼런스 -->
+  <section class="blk" id="ref">
+    <p class="blk_no">01</p>
+    <h2>레퍼런스 영상 분석</h2>
+    <p class="desc">KakaoTalk_20261008 · 30초 · 1280×720 · 수정모드 홍보 영상. 메인 섹션에 가져올 <b>모션 문법</b>을 뽑았습니다.</p>
+    <div class="frames">
+      <figure><img src="images/ref_22.jpg" alt="문구 하나 바꾸는데 며칠씩 기다리셨나요" loading="lazy"><figcaption><b>00:02</b> 질문으로 문제 제기 — "며칠씩"만 레드</figcaption></figure>
+      <figure><img src="images/ref_34.jpg" alt="이제 직접 고치세요" loading="lazy"><figcaption><b>00:03</b> 해답 — "직접 고치세요." 인디고 + 밑줄</figcaption></figure>
+      <figure><img src="images/ref_50.jpg" alt="01 수정모드 켜기 단계 화면" loading="lazy"><figcaption><b>00:05</b> 단계 칩(01~04) + 탭 + 브라우저 목업</figcaption></figure>
+      <figure><img src="images/ref_125.jpg" alt="02 글자 수정 툴바" loading="lazy"><figcaption><b>00:12</b> 초록 점선 편집 영역 · 다크 툴바</figcaption></figure>
+      <figure><img src="images/ref_160.jpg" alt="03 이미지 교체 모달" loading="lazy"><figcaption><b>00:16</b> 이미지 변경 모달</figcaption></figure>
+      <figure><img src="images/ref_205.jpg" alt="04 대표번호 일괄 수정" loading="lazy"><figcaption><b>00:20</b> 대표번호 일괄 수정</figcaption></figure>
+      <figure><img src="images/ref_230.jpg" alt="링크 슬라이드 매장 목록 카드" loading="lazy"><figcaption><b>00:23</b> 링크 · 슬라이드 · 매장 목록 카드</figcaption></figure>
+      <figure><img src="images/ref_260.jpg" alt="저장 완료" loading="lazy"><figcaption><b>00:26</b> 저장 중 → 저장 완료(초록)</figcaption></figure>
+      <figure><img src="images/ref_290.jpg" alt="아웃트로" loading="lazy"><figcaption><b>00:29</b> 아웃트로 — 브이웹.com · 1666-5812</figcaption></figure>
+    </div>
+    <div class="grid4">
+      <div class="card"><p class="k">문법 ①</p><p class="t">질문 → 해답 카피 리듬</p><p class="d">문제를 질문으로 던지고, 짧은 해답 한 줄로 받는다. 01 인트로와 05 아웃트로에 그대로 사용.</p></div>
+      <div class="card"><p class="k">문법 ②</p><p class="t">단계 칩 + 실제 화면</p><p class="d">번호 칩과 단계명을 고정해 두고 오른쪽 화면만 바뀐다. 01 핀 데모의 뼈대.</p></div>
+      <div class="card"><p class="k">문법 ③</p><p class="t">커서가 직접 조작</p><p class="d">설명 대신 커서가 클릭 · 타이핑 · 적용한다. 01 · 05 목업 시연에 적용.</p></div>
+      <div class="card"><p class="k">문법 ④</p><p class="t">상태 피드백</p><p class="d">초록 점선, 주황 img 배지, 저장 (N) 카운트, 초록 완료. 화면 안 UI 색은 영상 그대로.</p></div>
+    </div>
+  </section>
+
+  <!-- 2. 톤앤매너 -->
+  <section class="blk" id="tone">
+    <p class="blk_no">02</p>
+    <h2>톤앤매너</h2>
+    <p class="desc">현재 브이웹.com 메인(V PROJECTS · CLIENT · CONTACT 영역)에서 색과 서체를 실측해 맞췄습니다.</p>
+    <div class="chips">
+      <div class="chip"><i style="--c:#3235CD"></i><b>#3235CD</b><span>메인 인디고 · CLIENT 배경, 강조</span></div>
+      <div class="chip"><i style="--c:#E9E9FF"></i><b>#E9E9FF</b><span>라벤더 · V PROJECTS 배경</span></div>
+      <div class="chip"><i style="--c:#F3F3FF"></i><b>#F3F3FF</b><span>연라벤더 · 섹션 교차 배경</span></div>
+      <div class="chip"><i style="--c:#000"></i><b>#000000</b><span>블랙 · CONTACT · 푸터</span></div>
+      <div class="chip"><i style="--c:#F44830"></i><b>#F44830</b><span>문제 강조(영상 "며칠씩")</span></div>
+      <div class="chip"><i style="--c:#16A34A"></i><b>#16A34A</b><span>완료 · 수정모드 ON</span></div>
+      <div class="chip"><i style="--c:#FF7A1A"></i><b>#FF7A1A</b><span>img 배지 · 입력 강조</span></div>
+    </div>
+    <div class="grid3">
+      <div class="card"><p class="k">영문 타이틀</p><p class="t en"><span class="v">V</span> EDIT<span class="v">.</span></p><p class="d">Poppins 800. 라이브 "V PROJECTS."와 같은 문법 — V와 마침표만 인디고.</p></div>
+      <div class="card"><p class="k">국문 타이틀 · 본문</p><p class="t">이제, <em>직접 고치세요.</em></p><p class="d">Pretendard Variable 700/800, 본문 400. 강조 단어만 인디고.</p></div>
+      <div class="card"><p class="k">단위 · 반응형</p><p class="t">PC 1920 / MO 390 기준 vw</p><p class="d">라이브 renew 템플릿과 같은 vw 방식. 목업 내부는 em 스케일로 비율 유지. 모바일 분기 599px.</p></div>
+    </div>
+  </section>
+
+  <!-- 3. 섹션 상세 -->
+  <section class="blk sec" id="s1">
+    <p class="blk_no">03 — 01</p>
+    <h2><span class="en">V EDIT.</span> 직접 고치는 홈페이지</h2>
+    <dl class="spec">
+      <dt>목적</dt><dd>영상의 수정모드 메시지를 메인에서 <b>체험하듯</b> 보여주고, 관리자 <b>팝업 디자인</b>까지 한 흐름으로 묶는다. (요청: 관리자페이지 팝업 디자인 · 직접 수정 가능한 커스텀 홈페이지 필수)</dd>
+      <dt>카피</dt><dd><q>문구 하나 바꾸는데 <span class="red">며칠씩</span> 기다리셨나요?</q><q>이제, <em>직접 고치세요.</em></q><span class="sub">브이웹 홈페이지는 브랜드에 맞춰 만든 커스텀 홈페이지입니다. 관리자 로그인 한 번이면 보고 있는 화면에서 바로 고치고, 바로 반영됩니다.</span></dd>
+      <dt>구성</dt><dd><ol>
+        <li>인트로 — 질문 → 해답 (영상 00:02~00:03)</li>
+        <li>단계 목록 5 + 브라우저 목업 — <b>01 수정모드 켜기 · 02 글자 수정 · 03 이미지 교체 · 04 대표번호 일괄 수정 · 05 팝업 디자인</b></li>
+        <li>카드 4 — 연결 링크 · 메인 슬라이드 · 매장 목록 (화면에서 바로) / 디자인 관리 (관리자: 팝업레이어 · 배너 · 로고 · 메뉴 · 레이아웃 · 워터마크)</li>
+        <li>저장 → 저장 완료 — "클릭 한 번이면, 사이트에 바로 반영."</li>
+      </ol></dd>
+      <dt>모션</dt><dd><b>PC</b> 단계 전환 핀 1개 (단계당 0.8뷰포트) — 핀 진행도로 단계를 바꾸고, 단계마다 커서가 클릭 · 타이핑 · 모달 적용을 시연. 왼쪽 진행선이 채워지고, 단계를 누르면 해당 위치로 스크롤.<br>
+        <b>모바일</b> 핀 없음 — 목업이 화면에 들어오면 자동 재생(단계 끝 + 1.6초 후 다음), 탭 터치로 이동, 화면 밖이면 일시정지.</dd>
+      <dt>근거 기능</dt><dd><ul class="tags">
+        <li>수정모드: 텍스트 · 굵게/기울임/취소선 · 색상(#코드) · 크기 ± · 서식 지우기</li><li>사진 교체 (긴 변 1200px 자동 리사이즈)</li><li>링크 수정 · JSON 슬라이드 추가/삭제/순서</li><li>FAQ · 매장 행 추가 (주소 → 좌표 자동 변환)</li><li>☎ 대표번호 일괄 수정</li>
+        <li>팝업레이어관리: PC/모바일 따로 설정</li><li>표시 방식 슬라이드 · 나열식 · 스택형</li><li>배경 효과 없음 · 어둡게 · 블러</li><li>다시 보지 않음 시간 · 노출 기간 · 기기 · 페이지</li><li>유튜브 링크 자동 임베드</li></ul></dd>
+      <dt>표현 주의</dt><dd>수정모드는 프로젝트마다 적용하는 패키지라 "브이웹 홈페이지에 적용"으로 표현. 수정 <b>이력/버전 되돌리기</b>는 없으므로 카피에서 사용하지 않음.</dd>
+    </dl>
+  </section>
+
+  <section class="blk sec" id="s2">
+    <p class="blk_no">03 — 02</p>
+    <h2><span class="en">V SEARCH.</span> AI가 읽는 홈페이지</h2>
+    <dl class="spec">
+      <dt>목적</dt><dd>SEO → AEO → GEO 흐름을 <b>"사람이 보는 화면 vs AI가 읽는 화면"</b> 비교로 한 번에 이해시킨다. (요청: AEO · GEO · SEO, JSON-LD, 사이트맵, AI가 읽을 수 있는 홈페이지)</dd>
+      <dt>카피</dt><dd><q>검색창 대신 AI에게 묻는 시대, 우리 홈페이지는 <em>AI가 읽을 수 있나요?</em></q><q>정리된 데이터는 <em>AI 답변에 그대로</em> 인용됩니다.</q></dd>
+      <dt>구성</dt><dd><ol>
+        <li>비교 — 매장 카드(사람) ↔ JSON-LD @graph 코드(AI), 가운데 "화면과 1:1 일치" 체크 5개</li>
+        <li>AI 답변 예시 — 질문 → 생각 중 → 답변 스트리밍 → 출처 칩</li>
+        <li>SEO · AEO · GEO 카드 3 + 키워드 칩 (sitemap.xml · robots.txt · JSON-LD · FAQPage · 매장 ItemList · Open Graph · RSS · 서치어드바이저 · 서치콘솔 · alt 설계)</li>
+      </ol></dd>
+      <dt>모션</dt><dd>코드 줄이 흐린 상태에서 위부터 또렷해짐 → 매장명 · 주소 · 전화 · 영업시간 · FAQ 순으로 <b>양쪽 동시 하이라이트</b> + 체크. 답변은 단어 단위로 흘러나옴. PC 카드는 자기장(근접) 호버.</dd>
+      <dt>근거 기능</dt><dd><ul class="tags">
+        <li>JSON-LD 플레이북: 고객사 Organization + WebSite + 제작사(브이웍스 · 브이웹 · 브이인더웹)</li><li>매장 목록 + 좌표, FAQPage — 게시판과 같은 데이터</li><li>화면에 보이는 사실만 넣는 원칙</li><li>사이트맵 플레이북: 동적 sitemap · robots Sitemap 줄 · 구글/네이버 제출</li>
+        <li>관리자 사이트 정보 · SEO: 메타 · OG · 소유확인</li><li>ROBOTS 설정 · RSS</li><li>시맨틱 마크업 · 이미지 alt 설계 규칙</li></ul></dd>
+      <dt>표현 주의</dt><dd>JSON-LD · 동적 사이트맵은 플레이북으로 <b>제작 시 적용</b>하는 항목 → "제작 단계에서 설계합니다"로 표현. llms.txt · IndexNow · hreflang은 현재 제공 범위가 아니어서 넣지 않음.</dd>
+    </dl>
+  </section>
+
+  <section class="blk sec" id="s3">
+    <p class="blk_no">03 — 03</p>
+    <h2><span class="en">V FAST &amp; SAFE.</span> 빠르고 단단하게</h2>
+    <dl class="spec">
+      <dt>목적</dt><dd>보이지 않는 품질(속도 · 성능 · 보안 · 봇 차단)을 눈에 보이는 그림으로. (요청: 속도 · 성능 · 검색최적화 · 보안 · 봇차단)</dd>
+      <dt>카피</dt><dd><q>빠르게 열리고, 아무나 <em>들어올 수 없게.</em></q><q>가볍게, <em>필요한 것부터.</em></q></dd>
+      <dt>구성</dt><dd><ol>
+        <li>속도 카드 4 — 이미지 · 영상 압축 / 보이는 것부터 로딩 / 폰트 최적화 / 라이브러리 자체 호스팅</li>
+        <li>레이더 + 문의폼 보안 로그(예시)</li>
+        <li>방어 카드 8 — 허니팟 · 1회용 보안 토큰 · 출처 확인 · 스팸 문구 필터 · 전송 횟수 제한 · 자동입력방지 강화 · IP 즉시 차단 · 업로드 보호</li>
+        <li>"봇 방문은 통계에서도 빠집니다" → 04로 연결</li>
+      </ol></dd>
+      <dt>모션</dt><dd>카드마다 미니 시각화(막대 축소 · 타일 지연 등장 · 폰트 swap · 패킷 이동). 레이더는 <b>봇(레드)이 링에서 멈추고 방문자(화이트)만 중심 도달</b> — 화면 밖이면 정지. 로그 줄은 흐린 상태에서 차례로 또렷해지고, LIVE 점멸은 1개만.</dd>
+      <dt>근거 기능</dt><dd><ul class="tags">
+        <li>비회원 게시판 · 문의폼 보안 (허니팟 · 토큰 · 출처 확인 · 스팸 필터 · 전송 제한)</li><li>자동입력방지 강화</li><li>첨부파일 실제 형식 검사</li><li>관리자 IP차단 — 페이지 실행 전 차단</li><li>업로드 폴더 실행 차단</li><li>방문분석 봇 제외</li><li>폰트 swap · 다이내믹 서브셋</li><li>라이브러리 로컬화 · 중복 로딩 정리</li><li>이미지 · 영상 압축, 지연 로딩</li></ul></dd>
+      <dt>표현 주의</dt><dd>속도는 점수(PageSpeed 등) 약속 없이 정성 표현. 보안 세부 수치(간격 · 횟수 · 필드명)는 공개 페이지에 적지 않음 — 우회 힌트가 될 수 있음. 로그는 "예시"로 표기.</dd>
+    </dl>
+  </section>
+
+  <section class="blk sec" id="s4">
+    <p class="blk_no">03 — 04</p>
+    <h2><span class="en">V INSIGHT.</span> 숫자로 보는 방문자</h2>
+    <dl class="spec">
+      <dt>목적</dt><dd>외부 도구 없이 관리자에서 바로 보는 방문분석. (요청: 접속자 집계 · 홈페이지 방문분석)</dd>
+      <dt>카피</dt><dd><q>누가 오고, 어디서 머물고, <em>왜 문의했는지</em> 보입니다.</q></dd>
+      <dt>구성</dt><dd><ol>
+        <li>관리자 "홈페이지 분석" 화면 톤 대시보드 (예시 데이터 표기)</li>
+        <li>특징 4 — 구역별 도달 · 문의 단계 · 광고 유입 자동 구분 · 깨끗한 숫자</li>
+        <li>신뢰 칩 4 — 자체 DB · 봇/관리자 제외 · 입력 내용/원본 IP 미저장 · 기기 구분</li>
+      </ol></dd>
+      <dt>모션</dt><dd>KPI 카운트업(자릿수에 맞춰 스냅, 12,480 · 1분 42초 · 38% · 64%) → 구역별 도달률 · 문의 단계 · 유입 매체 막대 → 기기 도넛. 모바일은 카드마다 개별 트리거.</dd>
+      <dt>근거 기능</dt><dd><ul class="tags">
+        <li>페이지 조회 · 평균 머문 시간 · 1분 이상 본 비율 · 평균 내려본 깊이</li><li>구역별 분석 (섹션 이름 자동 인식)</li><li>문의 단계: 확인 → 작성 시작 → 접수 완료</li><li>유입 매체 · 접속기기</li><li>광고 파라미터 인식 (UTM 등)</li><li>봇 · 관리자 방문 제외</li><li>외부 서비스 없이 자체 DB</li></ul></dd>
+      <dt>표현 주의</dt><dd>"실시간"이라 하지 않음(짧은 주기로 반영). "IP 미저장"은 홈페이지 분석 데이터 기준이라 칩 문구를 "분석 데이터에"로 한정.</dd>
+    </dl>
+  </section>
+
+  <section class="blk sec" id="s5">
+    <p class="blk_no">03 — 05</p>
+    <h2><span class="en">V ALL IN ONE.</span> 24시간 상담 중</h2>
+    <dl class="spec">
+      <dt>목적</dt><dd>자유 섹션 — 새로 들어간 <b>AI 상담 챗봇</b>과 <b>문의 자동 배정</b>을 보여주고, 영상 아웃트로로 메인 신규 구간을 마무리.</dd>
+      <dt>카피</dt><dd><q>상담이 끝난 밤에도, 홈페이지는 <em>상담 중</em>입니다.</q><q>고객이 직접 고치는 홈페이지, <b>브이웹</b>이 만듭니다.</q><span class="sub">브이웹.com · 상담문의 1666-5812</span></dd>
+      <dt>구성</dt><dd><ol>
+        <li>폰 채팅 — 빠른 질문 → 답변 → 지역 → 연락처 → 알림 전송</li>
+        <li>실시간 접수 → 관리자 창업문의 내역 (새 행 + 담당자 자동 배정 + 메일 알림)</li>
+        <li>기능 박스 2 — AI 상담 / 문의 관리</li>
+        <li>인디고 아웃트로 — 마퀴(EDIT · AI SEARCH · SPEED · SECURITY · ANALYTICS · AI CHAT) + 01~05 바로가기</li>
+      </ol></dd>
+      <dt>모션</dt><dd>빠른 질문 탭 → 타이핑 점 → 답변 순서로 대화가 이어지고, 접수 점이 관리자 화면으로 이동 → 기존 행을 밀어내며 새 행 등장 → B 담당 배정 → 토스트. 마퀴는 CSS 무한 흐름.</dd>
+      <dt>근거 기능</dt><dd><ul class="tags">
+        <li>AI 관리 &gt; 챗봇 설정: 이름 · 아이콘 · 말풍선 색</li><li>말투 4종 · 환영 메시지</li><li>상담 시간 안내 · 빠른 질문 최대 4</li><li>브랜드 정보 · 연락처 알림 메일</li><li>문의관리: 상담 상태 단계 · 그룹 비율 자동 배정</li><li>문의별 유입 정보 · 엑셀 · 휴지통</li></ul></dd>
+    </dl>
+  </section>
+
+  <!-- 4. 모션 원칙 -->
+  <section class="blk" id="motion">
+    <p class="blk_no">04</p>
+    <h2>모션 원칙 (공통)</h2>
+    <p class="desc">보유 애니메이션 스킬(gsap.md · gsap 핀.md · 자기장 효과.md)의 규칙을 그대로 따랐습니다. 톤은 "휙휙"이 아니라 <b>"스윽스윽"</b>.</p>
+    <div class="grid3">
+      <div class="card"><p class="k">이즈 · 강도</p><p class="t">power4.out · 1초 · yPercent ≤ 30</p><p class="d">도장(scale 3)과 슬램은 사용하지 않음. 이미지 · 목업은 아래에서 위로.</p></div>
+      <div class="card"><p class="k">리듬</p><p class="t">무대 → 디테일 → 장식</p><p class="d">position은 '&lt; N%'로 통일. 밑줄 같은 장식은 맨 마지막. 섹션당 줄 스플릿 1개(헤드라인).</p></div>
+      <div class="card"><p class="k">PC · 모바일</p><p class="t">좌우 동시 / 위→아래 개별</p><p class="d">PC에서 한 화면에 보이는 좌우는 동시 등장. 모바일은 세로로 나뉘는 블록마다 자기 트리거.</p></div>
+      <div class="card"><p class="k">되감김 방지</p><p class="t">paused + onEnter play</p><p class="d">트리거가 트윈을 소유하지 않아 refresh 때 빈 화면으로 돌아가지 않음.</p></div>
+      <div class="card"><p class="k">핀</p><p class="t">PC 1개(01) · 모바일 0개</p><p class="d">파일 최하단에서 생성 후 refresh, anticipatePin 0.5, scroll-behavior 보정. 단계 클릭은 스크롤만 이동.</p></div>
+      <div class="card"><p class="k">반복 · 접근성</p><p class="t">화면 밖 정지 · 점멸 1개</p><p class="d">레이더 · 채팅 자동재생은 화면 밖에서 멈춤. prefers-reduced-motion이면 최종 상태로 표시.</p></div>
+    </div>
+  </section>
+
+  <!-- 5. 검증 -->
+  <section class="blk" id="check">
+    <p class="blk_no">05</p>
+    <h2>검증 결과</h2>
+    <p class="desc">헤드리스 Chrome으로 PC 1920×1080(720px/s) · 모바일 390×844(480px/s) <b>자연 스크롤</b>을 흘리며 요소 96개를 프레임 단위로 계측했습니다. (gsap.md §2-3 기준)</p>
+    <div class="grid4 kpis">
+      <div class="card"><p class="big">0</p><p class="t">시작조차 못 한 요소</p><p class="d">PC · 모바일</p></div>
+      <div class="card"><p class="big">0</p><p class="t">1초 넘게 빈칸인 요소</p><p class="d">PC · 모바일</p></div>
+      <div class="card"><p class="big">0</p><p class="t">화면 밖에서 끝난 요소</p><p class="d">PC · 모바일</p></div>
+      <div class="card"><p class="big">1px</p><p class="t">핀 시작 위치 오차</p><p class="d">모바일 핀 0개 · 가로 넘침 0 · 콘솔 에러 0</p></div>
+    </div>
+  </section>
+
+  <!-- 6. 적용 메모 -->
+  <section class="blk" id="apply">
+    <p class="blk_no">06</p>
+    <h2>실제 메인 적용 메모</h2>
+    <ul class="memo">
+      <li>클래스는 <code>vs01 ~ vs05</code> 접두어 — 기존 메인 <code>con2 ~ con9</code>와 겹치지 않음.</li>
+      <li>현재 메인은 GSAP 3.11.4 + ScrollTrigger 3.6.0으로 <b>버전이 서로 다름</b> → 3.13.0으로 통일하고 ScrollToPlugin을 추가하는 것을 권장.</li>
+      <li>스크립트는 jQuery 1.12에서도 동작하는 문법만 사용 (자기장 효과 함수).</li>
+      <li>시안 상단바 · 커버 · 하단 안내(<code>.dh</code> · <code>.cv</code> · <code>.df</code>)는 데모용이라 이식 대상이 아님.</li>
+      <li>이미지 파일 없이 CSS · SVG로만 구성 — 실제 적용 시 디자인 시안 이미지로 교체 가능.</li>
+      <li>화면 속 브랜드(모노브루) · 번호 · 수치는 모두 설명용 예시.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="pf">브이웹 메인페이지 신규 섹션 기획서 · <a href="index.html">시안 보기</a></footer>
+</body>
+</html>

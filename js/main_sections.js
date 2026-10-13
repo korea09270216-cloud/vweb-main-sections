@@ -522,7 +522,7 @@ window.addEventListener("load", function () {
      ========================================================= */
   headReveal(".vs02");
 
-  const pairKeys = ["name", "addr", "tel", "hours", "faq"];
+  const pairKeys = ["name", "addr", "tel", "mail", "sns", "maker"];
   function pairs(t, pos) {
     pairKeys.forEach(function (k, i) {
       t.to({}, {
@@ -858,10 +858,15 @@ window.addEventListener("load", function () {
     });
 
     // 단계 클릭 → 스크롤만 옮긴다 (콘텐츠는 onUpdate 가 따라옴)
+    // CSS smooth 가 켜져 있으면 매 프레임 scrollTo 가 서로 끊겨 0.6초 멈춘 뒤 움직인다 → 트윈 동안만 auto
     function onStep(e) {
       const i = S1.steps.indexOf(e.currentTarget);
       const p = Math.min(0.98, Math.max(0.02, (i + 0.5) / N));
-      gsap.to(window, { scrollTo: pin.start + (pin.end - pin.start) * p, duration: 0.6, ease: "power2.out", overwrite: true });
+      docEl.style.setProperty("scroll-behavior", "auto", "important");
+      gsap.to(window, {
+        scrollTo: pin.start + (pin.end - pin.start) * p, duration: 0.25, ease: "power2.out", overwrite: true,
+        onComplete: function () { docEl.style.removeProperty("scroll-behavior"); },
+      });
     }
     S1.steps.forEach(function (b) { b.addEventListener("click", onStep); });
 

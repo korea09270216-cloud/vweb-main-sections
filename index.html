@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=1">
-  <link rel="stylesheet" href="css/mobile_style.css?v=1">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/mobile_style.css?v=2">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <section class="vs01" id="s1">
   <div class="vs01_intro sec_head">
     <p class="sec_en"><span class="v">V</span> EDIT<span class="dot">.</span></p>
-    <h2 class="vs01_q">문구 하나 바꾸는데<br><em class="red">며칠씩</em> 기다리셨나요?</h2>
+    <h2 class="vs01_q">문구 하나 바꾸는데<br>며칠씩 기다리셨나요?</h2>
     <p class="vs01_a">이제, <strong>직접 고치세요.<i class="vs01_ul"></i></strong></p>
     <p class="sec_desc vs01_desc">브이웹 홈페이지는 브랜드에 맞춰 만든 커스텀 홈페이지입니다.<br class="pc_br"> 관리자 로그인 한 번이면 보고 있는 화면에서 바로 고치고, 바로 반영됩니다.</p>
   </div>
@@ -215,18 +215,18 @@
         <div class="hc_bar"><i></i><i></i><i></i></div>
         <div class="hc_body">
           <p class="hc_logo">MONO<span>BREW</span></p>
-          <p class="hc_h">매장 찾기</p>
-          <div class="hc_store">
-            <p class="hk hk_name" data-k="name">모노브루 둔산점</p>
-            <p class="hk" data-k="addr"><i>📍</i>대전 서구 둔산로 00</p>
-            <p class="hk" data-k="tel"><i>☎</i>042-123-4567</p>
-            <p class="hk" data-k="hours"><i>🕗</i>매일 08:00 – 22:00</p>
+          <p class="hc_h">홈페이지 하단 정보</p>
+          <div class="hc_info">
+            <p class="hk hk_name" data-k="name">주식회사 모노브루</p>
+            <p class="hk" data-k="addr"><i>📍</i>대전 서구 둔산로 00, 5층</p>
+            <p class="hk" data-k="tel"><i>☎</i>1577-1234</p>
+            <p class="hk" data-k="mail"><i>✉</i>hello@monobrew.co.kr</p>
           </div>
-          <div class="hc_faq">
-            <p class="hc_faq_lb">자주 묻는 질문</p>
-            <p class="hk hk_q" data-k="faq">Q. 창업 비용은 얼마인가요?</p>
-            <p class="hc_a">평수와 상권에 따라 달라지며, 상담 시 상세 견적을 안내합니다.</p>
+          <div class="hc_sns">
+            <p class="hc_lb">공식 SNS</p>
+            <p class="hk hk_sns" data-k="sns">Instagram · 네이버 블로그</p>
           </div>
+          <p class="hc_credit"><span class="hk" data-k="maker">Created by VWEB</span></p>
         </div>
       </div>
     </div>
@@ -235,11 +235,12 @@
       <svg class="vm_arrow" viewBox="0 0 120 24" aria-hidden="true"><path d="M2 12h112" stroke="currentColor" stroke-width="2" stroke-dasharray="6 6" fill="none"/><path d="M106 4l10 8-10 8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <p class="vm_tit">화면과 1:1 일치</p>
       <ul class="vm_list">
-        <li data-k="name">매장명</li>
+        <li data-k="name">회사명</li>
         <li data-k="addr">주소</li>
-        <li data-k="tel">전화</li>
-        <li data-k="hours">영업시간</li>
-        <li data-k="faq">FAQ</li>
+        <li data-k="tel">대표번호</li>
+        <li data-k="mail">이메일</li>
+        <li data-k="sns">SNS</li>
+        <li data-k="maker">제작사</li>
       </ul>
     </div>
 
@@ -252,16 +253,18 @@
 <p class="cl">{</p>
 <p class="cl">  <span class="k">"@context"</span>: <span class="s">"https://schema.org"</span>,</p>
 <p class="cl">  <span class="k">"@graph"</span>: [</p>
-<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"Organization"</span>, <span class="k">"name"</span>: <span class="s">"모노브루"</span> },</p>
-<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"WebSite"</span>, <span class="k">"creator"</span>: { <span class="k">"@id"</span>: <span class="s">"#vweb"</span> } },</p>
-<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"CafeOrCoffeeShop"</span>,</p>
-<p class="cl">      <span class="hk" data-k="name"><span class="k">"name"</span>: <span class="s">"모노브루 둔산점"</span></span>,</p>
-<p class="cl">      <span class="hk" data-k="addr"><span class="k">"address"</span>: <span class="s">"대전 서구 둔산로 00"</span></span>,</p>
-<p class="cl">      <span class="hk" data-k="tel"><span class="k">"telephone"</span>: <span class="s">"042-123-4567"</span></span>,</p>
-<p class="cl">      <span class="hk" data-k="hours"><span class="k">"openingHours"</span>: <span class="s">"Mo-Su 08:00-22:00"</span></span> },</p>
-<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"FAQPage"</span>, <span class="k">"mainEntity"</span>: [{</p>
-<p class="cl">      <span class="k">"@type"</span>: <span class="t">"Question"</span>,</p>
-<p class="cl">      <span class="hk" data-k="faq"><span class="k">"name"</span>: <span class="s">"창업 비용은 얼마인가요?"</span></span> }] }</p>
+<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"Organization"</span>, <span class="k">"@id"</span>: <span class="s">"/#organization"</span>,</p>
+<p class="cl">      <span class="hk" data-k="name"><span class="k">"legalName"</span>: <span class="s">"주식회사 모노브루"</span></span>,</p>
+<p class="cl">      <span class="k">"address"</span>: { <span class="k">"@type"</span>: <span class="t">"PostalAddress"</span>,</p>
+<p class="cl">        <span class="hk" data-k="addr"><span class="k">"streetAddress"</span>: <span class="s">"대전 서구 둔산로 00, 5층"</span></span> },</p>
+<p class="cl">      <span class="hk" data-k="tel"><span class="k">"telephone"</span>: <span class="s">"1577-1234"</span></span>,</p>
+<p class="cl">      <span class="hk" data-k="mail"><span class="k">"email"</span>: <span class="s">"hello@monobrew.co.kr"</span></span>,</p>
+<p class="cl">      <span class="hk" data-k="sns"><span class="k">"sameAs"</span>: [<span class="s">"instagram.com/monobrew"</span>,</span></p>
+<p class="cl">                 <span class="hk" data-k="sns"><span class="s">"blog.naver.com/monobrew"</span>]</span> },</p>
+<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"WebSite"</span>, <span class="k">"publisher"</span>: { <span class="k">"@id"</span>: <span class="s">"/#organization"</span> },</p>
+<p class="cl">      <span class="hk" data-k="maker"><span class="k">"creator"</span>: { <span class="k">"@id"</span>: <span class="s">"브이웹.com/#organization"</span> }</span> },</p>
+<p class="cl">    { <span class="k">"@type"</span>: <span class="t">"Organization"</span>, <span class="k">"@id"</span>: <span class="s">"브이웹.com/#organization"</span>,</p>
+<p class="cl">      <span class="k">"name"</span>: <span class="s">"브이웹"</span>, <span class="k">"alternateName"</span>: <span class="s">"VWEB"</span> }</p>
 <p class="cl">  ]</p>
 <p class="cl">}</p>
 <p class="cl"><span class="tag">&lt;/script&gt;</span></p>
@@ -273,17 +276,17 @@
   <div class="vs02_answer">
     <div class="ai_ui">
       <p class="ai_top"><i class="ai_spark"></i>AI 검색 <span>답변 예시</span></p>
-      <p class="ai_q">모노브루 둔산점 몇 시까지 해? 전화번호도 알려줘</p>
+      <p class="ai_q">모노브루 본사 연락처랑 주소 알려줘</p>
       <p class="ai_think"><i></i><i></i><i></i></p>
       <div class="ai_a">
-        <p class="ai_a_txt">모노브루 둔산점은 <b>매일 08:00부터 22:00까지</b> 운영해요. 전화번호는 <b>042-123-4567</b>, 주소는 <b>대전 서구 둔산로 00</b>입니다.</p>
+        <p class="ai_a_txt">모노브루(주식회사 모노브루)의 대표번호는 <b>1577-1234</b>, 이메일은 <b>hello@monobrew.co.kr</b>이에요. 주소는 <b>대전 서구 둔산로 00, 5층</b>입니다.</p>
         <p class="ai_src"><i></i>출처 · monobrew.co.kr</p>
       </div>
     </div>
     <div class="ans_txt">
       <p class="ans_en">STRUCTURED DATA</p>
       <p class="ans_tit">정리된 데이터는<br><em>AI 답변에 그대로</em> 인용됩니다.</p>
-      <p class="ans_desc">매장 · 영업시간 · FAQ처럼 화면에 있는 사실을 구조화 데이터로 함께 담으면, 검색엔진과 AI가 우리 브랜드를 헷갈리지 않고 정확하게 소개합니다.</p>
+      <p class="ans_desc">회사명 · 주소 · 대표번호처럼 홈페이지에 있는 사실을 구조화 데이터로 함께 담으면, 검색엔진과 AI가 우리 브랜드를 헷갈리지 않고 정확하게 소개합니다.</p>
     </div>
   </div>
 
@@ -627,6 +630,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
-<script src="js/main_sections.js?v=1"></script>
+<script src="js/main_sections.js?v=2"></script>
 </body>
 </html>

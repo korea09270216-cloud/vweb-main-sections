@@ -88,7 +88,6 @@ code { padding: 1px 6px; border-radius: 4px; background: var(--c-lav2); color: v
 .spec q { display: block; font-size: 18px; font-weight: 700; letter-spacing: -.02em; color: var(--c-ink); quotes: none; }
 .spec q + q { margin-top: 4px; }
 .spec q em { color: var(--c-pri); }
-.spec .red { color: var(--c-red); }
 .spec ol { padding-left: 20px; }
 .spec ol li + li { margin-top: 4px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; }

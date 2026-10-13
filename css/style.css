@@ -84,7 +84,6 @@ a { color: inherit; text-decoration: none; }
    ========================================================= */
 .vs01 { position: relative; padding: 8.333vw 0 7.292vw; background: linear-gradient(180deg, var(--c-bg) 0%, var(--c-lav) 100%); }
 .vs01_q { margin-top: 2.083vw; font-size: 2.917vw; font-weight: 700; line-height: 1.35; letter-spacing: -0.04em; }
-.vs01_q .red { color: var(--c-red); }
 .vs01_a { margin-top: 1.042vw; font-size: 3.75vw; font-weight: 800; line-height: 1.25; letter-spacing: -0.045em; }
 .vs01_a strong { position: relative; display: inline-block; color: var(--c-pri); }
 .vs01_ul { position: absolute; left: 0; right: .3em; bottom: .02em; height: .07em; border-radius: 99px; background: var(--c-pri); transform-origin: left center; }
@@ -99,6 +98,10 @@ a { color: inherit; text-decoration: none; }
 .vs01_step .num { flex: none; width: 2.813vw; height: 2.813vw; border-radius: .729vw; display: grid; place-items: center; background: #fff; color: #a3a5c8; font-family: var(--f-en); font-weight: 700; font-size: 1.042vw; transition: background-color .4s, color .4s; }
 .vs01_step .txt b { display: block; font-size: 1.198vw; font-weight: 700; letter-spacing: -0.03em; color: #8d8fa8; transition: color .4s; }
 .vs01_step .txt i { display: block; margin-top: .26vw; font-size: .729vw; line-height: 1.45; color: #a2a4b8; transition: color .4s; }
+@media (hover: hover) {
+  .vs01_step:hover { background: rgba(255, 255, 255, .6); }
+  .vs01_step:hover .txt b { color: var(--c-ink); }
+}
 .vs01_step.on { background: #fff; box-shadow: 0 .521vw 1.563vw rgba(50, 53, 205, .1); }
 .vs01_step.on .num { background: var(--c-pri); color: #fff; }
 .vs01_step.on .txt b { color: var(--c-ink); }
@@ -280,22 +283,23 @@ a { color: inherit; text-decoration: none; }
 .lb_dot { width: .521vw; height: .521vw; border-radius: 50%; background: var(--c-orange); }
 .lb_dot.ai { background: var(--c-pri); }
 
-.hc { font-size: calc(26.042vw / 26); width: 26em; border-radius: 1em; background: #fff; border: 1px solid var(--c-line); box-shadow: 0 1.2em 3em rgba(40, 42, 120, .1); overflow: hidden; }
+.hc { font-size: calc(26.042vw / 26); width: 26em; border-radius: 1em; background: #fff; border: 1px solid var(--c-line); box-shadow: 0 1.2em 3em rgba(40, 42, 120, .1); overflow: hidden; display: flex; flex-direction: column; }
 .hc_bar { height: 1.8em; padding: 0 .9em; display: flex; align-items: center; gap: .35em; background: #f2f3f8; }
 .hc_bar i { width: .55em; height: .55em; border-radius: 50%; background: #d7d8e3; }
-.hc_body { padding: 1.4em 1.7em 1.7em; }
+.hc_body { flex: 1; display: flex; flex-direction: column; padding: 1.4em 1.7em 1.7em; }
 .hc_logo { font-family: var(--f-en); font-weight: 800; font-size: .82em; }
 .hc_logo span { color: #8a5a35; margin-left: .15em; }
 .hc_h { margin-top: 1.1em; font-size: 1.05em; font-weight: 800; letter-spacing: -.03em; }
-.hc_store { margin-top: .8em; padding: 1em 1.1em; border-radius: .7em; background: #f7f7fb; display: flex; flex-direction: column; gap: .45em; }
+.hc_info { margin-top: .8em; padding: 1em 1.1em; border-radius: .7em; background: #f7f7fb; display: flex; flex-direction: column; gap: .45em; }
 .hk { border-radius: .3em; transition: background-color .45s, box-shadow .45s; }
 .hc .hk { font-size: .66em; color: #444; }
 .hc .hk i { display: inline-block; width: 1.5em; }
 .hc .hk_name { font-size: .82em; font-weight: 800; color: #111; }
-.hc_faq { margin-top: 1.1em; }
-.hc_faq_lb { font-size: .58em; font-weight: 700; color: #999; }
-.hc .hk_q { margin-top: .5em; font-size: .72em; font-weight: 700; color: #111; }
-.hc_a { margin-top: .4em; font-size: .6em; line-height: 1.6; color: #777; }
+.hc_sns { margin: 1.1em 0 1.4em; display: flex; flex-direction: column; }
+.hc_lb { font-size: .58em; font-weight: 700; color: #999; }
+.hc .hk_sns { align-self: flex-start; margin-top: .5em; font-size: .72em; font-weight: 700; color: #111; }
+.hc_credit { margin-top: auto; padding-top: 1em; border-top: 1px solid var(--c-line); }
+.hc_credit .hk { font-family: var(--f-en); font-size: .56em; font-weight: 600; color: #999; }
 .hc .hk.hl { background-color: rgba(50, 53, 205, .12); box-shadow: 0 0 0 .3em rgba(50, 53, 205, .12); }
 
 .vs02_mid { align-self: center; display: flex; flex-direction: column; align-items: center; color: var(--c-pri); }

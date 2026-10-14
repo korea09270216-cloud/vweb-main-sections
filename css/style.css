@@ -349,7 +349,6 @@ a { color: inherit; text-decoration: none; }
 .pl_card:hover { background: #fff; border-color: rgba(50, 53, 205, .25); box-shadow: 0 .833vw 2.083vw rgba(50, 53, 205, .1); }
 .pl_en { font-family: var(--f-en); font-weight: 800; font-size: 2.5vw; line-height: 1; color: var(--c-pri); }
 .pl_ko { margin-top: .833vw; font-size: 1.146vw; font-weight: 700; }
-.pl_desc { margin-top: .313vw; font-size: .781vw; color: var(--c-sub); }
 .pl_card ul { margin-top: 1.25vw; padding-top: 1.25vw; border-top: 1px solid var(--c-line); display: flex; flex-direction: column; gap: .573vw; }
 .pl_card li { position: relative; padding-left: 1.146vw; font-size: .781vw; color: #444; }
 .pl_card li::before { content: ""; position: absolute; left: 0; top: .32em; width: .521vw; height: .313vw; border-left: .104vw solid var(--c-pri); border-bottom: .104vw solid var(--c-pri); transform: rotate(-45deg); }

@@ -104,7 +104,6 @@
   .pl_card { padding: 6.154vw 5.641vw; border-radius: 5.128vw; }
   .pl_en { font-size: 9.231vw; }
   .pl_ko { margin-top: 3.077vw; font-size: 4.615vw; }
-  .pl_desc { margin-top: 1.026vw; font-size: 3.333vw; }
   .pl_card ul { margin-top: 4.103vw; padding-top: 4.103vw; gap: 2.051vw; }
   .pl_card li { padding-left: 4.615vw; font-size: 3.462vw; }
   .pl_card li::before { width: 2.051vw; height: 1.282vw; border-width: .41vw; }

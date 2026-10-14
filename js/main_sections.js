@@ -295,7 +295,7 @@ window.addEventListener("load", function () {
       const edit = i >= 1;
       mock.classList.toggle("is-edit", edit);
       el.editBtn.classList.toggle("on", edit);
-      el.editTxt.textContent = edit ? "수정모드 끄기" : "수정모드 켜기";
+      el.editTxt.textContent = edit ? "수정 끄기" : "수정 켜기";
       el.kicker.textContent = i >= 2 ? TXT.kNew : TXT.kOld;
       el.titleB.classList.remove("sel");
       gsap.set(el.titleB, { color: i >= 2 ? TXT.hexNew : TXT.hexOld });
@@ -321,7 +321,7 @@ window.addEventListener("load", function () {
         click(t, "< 100%", function () {
           mock.classList.add("is-edit");
           el.editBtn.classList.add("on");
-          el.editTxt.textContent = "수정모드 끄기";
+          el.editTxt.textContent = "수정 끄기";
         });
         t.fromTo(el.save, { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power3.out" }, "< 70%");
         park(t, 0.55, 0.6, "< 60%", 1.1);
